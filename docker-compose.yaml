@@ -1,0 +1,37 @@
+version: "3.3"
+services:
+  geth:
+    build: geth/
+    container_name: ethereum
+    volumes:
+      - ./geth/config:/config
+    environment:
+      - BLOCK_TIME=5
+    ports:
+      - 8545:8545
+    restart: "always"
+    secrets:
+      - sealer_password
+  
+  api:
+    build: api/
+    container_name: blockchain_challenge_manager
+    ports:
+      - 3000:3000
+    environment:
+      - BLOCKCHAIN_URL=http://geth:8545
+      - CHALLENGE=PrivateLog
+    restart: "always"
+    secrets:
+      - deployer_priv_key
+    depends_on:
+      - geth
+
+secrets:
+  sealer_password:
+    file: ./geth/sealerpassword.secret.txt
+  deployer_priv_key:
+    file: ./api/deployer_priv_key.secret.txt
+
+networks:
+  default:

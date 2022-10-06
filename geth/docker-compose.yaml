@@ -1,0 +1,21 @@
+version: "3.3"
+services:
+  geth:
+    build: .
+    container_name: ethereum
+    volumes:
+      - ./config:/config
+    environment:
+      - BLOCK_TIME=10
+    ports:
+      - 8545:8545
+    restart: "no"
+    secrets:
+      - sealer_password
+
+secrets:
+  sealer_password:
+    file: ./sealerpassword.secret.txt
+
+networks:
+  default:
