@@ -3,19 +3,13 @@ services:
   geth:
     build: .
     container_name: ethereum
-    volumes:
-      - ./config:/config
     environment:
-      - BLOCK_TIME=10
+      - DEPLOYER_PRIVATE_KEY=35d7e3183bbe3e89907724a7c50a1e3f7207af30d169812534558f3591e27b30
+      - BLOCK_TIME=5
+      - CHAIN_ID=31337
     ports:
       - 8545:8545
     restart: "no"
-    secrets:
-      - sealer_password
-
-secrets:
-  sealer_password:
-    file: ./sealerpassword.secret.txt
 
 networks:
   default:

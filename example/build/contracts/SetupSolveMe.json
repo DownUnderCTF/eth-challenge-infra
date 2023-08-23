@@ -1,0 +1,3005 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "player_address",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "challenge",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "deploy",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "isSolved",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "player_address",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "1": "contracts/Setup.sol",
+    "2": "contracts/SolveMe.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/SolveMe.sol",
+    "exportedSymbols": {
+      "Setup": [
+        104
+      ],
+      "SetupSolveMe": [
+        167
+      ],
+      "SolveMe": [
+        121
+      ]
+    },
+    "id": 168,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 106,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:2"
+      },
+      {
+        "absolutePath": "contracts/Setup.sol",
+        "file": "./Setup.sol",
+        "id": 108,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 168,
+        "sourceUnit": 105,
+        "src": "58:34:2",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 107,
+              "name": "Setup",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 104,
+              "src": "66:5:2",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "SolveMe",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 109,
+          "nodeType": "StructuredDocumentation",
+          "src": "93:53:2",
+          "text": " @title SolveMe\n @author BlueAlder duc.tf"
+        },
+        "fullyImplemented": true,
+        "id": 121,
+        "linearizedBaseContracts": [
+          121
+        ],
+        "name": "SolveMe",
+        "nameLocation": "157:7:2",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "64d98f6e",
+            "id": 112,
+            "mutability": "mutable",
+            "name": "isSolved",
+            "nameLocation": "183:8:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 121,
+            "src": "171:28:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 110,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "171:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "value": {
+              "hexValue": "66616c7365",
+              "id": 111,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "bool",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "194:5:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              },
+              "value": "false"
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 119,
+              "nodeType": "Block",
+              "src": "241:32:2",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 117,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 115,
+                      "name": "isSolved",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 112,
+                      "src": "251:8:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "74727565",
+                      "id": 116,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "262:4:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "251:15:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 118,
+                  "nodeType": "ExpressionStatement",
+                  "src": "251:15:2"
+                }
+              ]
+            },
+            "functionSelector": "3d71bea5",
+            "id": 120,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "solveChallenge",
+            "nameLocation": "215:14:2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 113,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "229:2:2"
+            },
+            "returnParameters": {
+              "id": 114,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "241:0:2"
+            },
+            "scope": 121,
+            "src": "206:67:2",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 168,
+        "src": "148:127:2",
+        "usedErrors": []
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 123,
+              "name": "Setup",
+              "nameLocations": [
+                "425:5:2"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 104,
+              "src": "425:5:2"
+            },
+            "id": 124,
+            "nodeType": "InheritanceSpecifier",
+            "src": "425:5:2"
+          }
+        ],
+        "canonicalName": "SetupSolveMe",
+        "contractDependencies": [
+          121
+        ],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 122,
+          "nodeType": "StructuredDocumentation",
+          "src": "277:122:2",
+          "text": " @dev This is the Setup Contract which checks if the challenge is solved or not\n (not a part of the challenge)"
+        },
+        "fullyImplemented": true,
+        "id": 167,
+        "linearizedBaseContracts": [
+          167,
+          104
+        ],
+        "name": "SetupSolveMe",
+        "nameLocation": "409:12:2",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 132,
+              "nodeType": "Block",
+              "src": "495:2:2",
+              "statements": []
+            },
+            "id": 133,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "id": 129,
+                    "name": "player_address",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 126,
+                    "src": "479:14:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "id": 130,
+                "kind": "baseConstructorSpecifier",
+                "modifierName": {
+                  "id": 128,
+                  "name": "Setup",
+                  "nameLocations": [
+                    "473:5:2"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 104,
+                  "src": "473:5:2"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "473:21:2"
+              }
+            ],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 127,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 126,
+                  "mutability": "mutable",
+                  "name": "player_address",
+                  "nameLocation": "457:14:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 133,
+                  "src": "449:22:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 125,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "449:7:2",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "448:24:2"
+            },
+            "returnParameters": {
+              "id": 131,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "495:0:2"
+            },
+            "scope": 167,
+            "src": "437:60:2",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "baseFunctions": [
+              98
+            ],
+            "body": {
+              "id": 152,
+              "nodeType": "Block",
+              "src": "555:85:2",
+              "statements": [
+                {
+                  "assignments": [
+                    141
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 141,
+                      "mutability": "mutable",
+                      "name": "_instance",
+                      "nameLocation": "573:9:2",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 152,
+                      "src": "565:17:2",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_SolveMe_$121",
+                        "typeString": "contract SolveMe"
+                      },
+                      "typeName": {
+                        "id": 140,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 139,
+                          "name": "SolveMe",
+                          "nameLocations": [
+                            "565:7:2"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 121,
+                          "src": "565:7:2"
+                        },
+                        "referencedDeclaration": 121,
+                        "src": "565:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_SolveMe_$121",
+                          "typeString": "contract SolveMe"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 146,
+                  "initialValue": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 144,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "NewExpression",
+                      "src": "585:11:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_SolveMe_$121_$",
+                        "typeString": "function () returns (contract SolveMe)"
+                      },
+                      "typeName": {
+                        "id": 143,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 142,
+                          "name": "SolveMe",
+                          "nameLocations": [
+                            "589:7:2"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 121,
+                          "src": "589:7:2"
+                        },
+                        "referencedDeclaration": 121,
+                        "src": "589:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_SolveMe_$121",
+                          "typeString": "contract SolveMe"
+                        }
+                      }
+                    },
+                    "id": 145,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "585:13:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_SolveMe_$121",
+                      "typeString": "contract SolveMe"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "565:33:2"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 149,
+                        "name": "_instance",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 141,
+                        "src": "623:9:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_SolveMe_$121",
+                          "typeString": "contract SolveMe"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_contract$_SolveMe_$121",
+                          "typeString": "contract SolveMe"
+                        }
+                      ],
+                      "id": 148,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "ElementaryTypeNameExpression",
+                      "src": "615:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_address_$",
+                        "typeString": "type(address)"
+                      },
+                      "typeName": {
+                        "id": 147,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "615:7:2",
+                        "typeDescriptions": {}
+                      }
+                    },
+                    "id": 150,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "615:18:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 138,
+                  "id": 151,
+                  "nodeType": "Return",
+                  "src": "608:25:2"
+                }
+              ]
+            },
+            "functionSelector": "775c300c",
+            "id": 153,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deploy",
+            "nameLocation": "512:6:2",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 135,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "528:8:2"
+            },
+            "parameters": {
+              "id": 134,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "518:2:2"
+            },
+            "returnParameters": {
+              "id": 138,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 137,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 153,
+                  "src": "546:7:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 136,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "546:7:2",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "545:9:2"
+            },
+            "scope": 167,
+            "src": "503:137:2",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "baseFunctions": [
+              103
+            ],
+            "body": {
+              "id": 165,
+              "nodeType": "Block",
+              "src": "704:53:2",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "arguments": [
+                          {
+                            "id": 160,
+                            "name": "challenge",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 76,
+                            "src": "729:9:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "id": 159,
+                          "name": "SolveMe",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 121,
+                          "src": "721:7:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_SolveMe_$121_$",
+                            "typeString": "type(contract SolveMe)"
+                          }
+                        },
+                        "id": 161,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "nameLocations": [],
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "721:18:2",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_SolveMe_$121",
+                          "typeString": "contract SolveMe"
+                        }
+                      },
+                      "id": 162,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "740:8:2",
+                      "memberName": "isSolved",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 112,
+                      "src": "721:27:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_view$__$returns$_t_bool_$",
+                        "typeString": "function () view external returns (bool)"
+                      }
+                    },
+                    "id": 163,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "721:29:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 158,
+                  "id": 164,
+                  "nodeType": "Return",
+                  "src": "714:36:2"
+                }
+              ]
+            },
+            "functionSelector": "64d98f6e",
+            "id": 166,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isSolved",
+            "nameLocation": "655:8:2",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 155,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "680:8:2"
+            },
+            "parameters": {
+              "id": 154,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "663:2:2"
+            },
+            "returnParameters": {
+              "id": 158,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 157,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 166,
+                  "src": "698:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 156,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "698:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "697:6:2"
+            },
+            "scope": 167,
+            "src": "646:111:2",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 168,
+        "src": "400:359:2",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:727:2"
+  },
+  "bytecode": "608060405234801561001057600080fd5b5060405161045638038061045683398101604081905261002f916100b9565b600180546001600160a01b0319166001600160a01b0383161790558061005361007b565b600080546001600160a01b0319166001600160a01b0392909216919091179055506100e99050565b60008060405161008a906100ad565b604051809103906000f0801580156100a6573d6000803e3d6000fd5b5092915050565b60c88061038e83390190565b6000602082840312156100cb57600080fd5b81516001600160a01b03811681146100e257600080fd5b9392505050565b610296806100f86000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806320c4ad961461005157806364d98f6e14610081578063775c300c14610099578063d2ef7398146100a1575b600080fd5b600154610064906001600160a01b031681565b6040516001600160a01b0390911681526020015b60405180910390f35b6100896100b4565b6040519015158152602001610078565b610064610131565b600054610064906001600160a01b031681565b60008060009054906101000a90046001600160a01b03166001600160a01b03166364d98f6e6040518163ffffffff1660e01b8152600401602060405180830381865afa158015610108573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061012c919061016f565b905090565b60008060405161014090610163565b604051809103906000f08015801561015c573d6000803e3d6000fd5b5092915050565b60c88061019983390190565b60006020828403121561018157600080fd5b8151801515811461019157600080fd5b939250505056fe60806040526000805460ff19169055348015601957600080fd5b5060a0806100286000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80633d71bea514603757806364d98f6e14604a575b600080fd5b60486000805460ff19166001179055565b005b60005460569060ff1681565b604051901515815260200160405180910390f3fea264697066735822122039b40b0b54c54003c149e0d909e6829822f0b0b72e7468ce93e2d1cf023eb8fb64736f6c63430008130033a2646970667358221220a16bf01567376b59998e0554e26dadbcd5e5aa5d9b32a0df4f8dede5a6c7706264736f6c6343000813003360806040526000805460ff19169055348015601957600080fd5b5060a0806100286000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80633d71bea514603757806364d98f6e14604a575b600080fd5b60486000805460ff19166001179055565b005b60005460569060ff1681565b604051901515815260200160405180910390f3fea264697066735822122039b40b0b54c54003c149e0d909e6829822f0b0b72e7468ce93e2d1cf023eb8fb64736f6c63430008130033",
+  "bytecodeSha1": "f49c9c6c0221c13daf820da88e1f31c32adf7b6a",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.8.19+commit.7dd6d404"
+  },
+  "contractName": "SetupSolveMe",
+  "coverageMap": {
+    "branches": {
+      "1": {},
+      "2": {}
+    },
+    "statements": {
+      "1": {},
+      "2": {
+        "SetupSolveMe.isSolved": {
+          "0": [
+            714,
+            750
+          ]
+        }
+      }
+    }
+  },
+  "dependencies": [
+    "Setup",
+    "SolveMe"
+  ],
+  "deployedBytecode": "608060405234801561001057600080fd5b506004361061004c5760003560e01c806320c4ad961461005157806364d98f6e14610081578063775c300c14610099578063d2ef7398146100a1575b600080fd5b600154610064906001600160a01b031681565b6040516001600160a01b0390911681526020015b60405180910390f35b6100896100b4565b6040519015158152602001610078565b610064610131565b600054610064906001600160a01b031681565b60008060009054906101000a90046001600160a01b03166001600160a01b03166364d98f6e6040518163ffffffff1660e01b8152600401602060405180830381865afa158015610108573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061012c919061016f565b905090565b60008060405161014090610163565b604051809103906000f08015801561015c573d6000803e3d6000fd5b5092915050565b60c88061019983390190565b60006020828403121561018157600080fd5b8151801515811461019157600080fd5b939250505056fe60806040526000805460ff19169055348015601957600080fd5b5060a0806100286000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80633d71bea514603757806364d98f6e14604a575b600080fd5b60486000805460ff19166001179055565b005b60005460569060ff1681565b604051901515815260200160405180910390f3fea264697066735822122039b40b0b54c54003c149e0d909e6829822f0b0b72e7468ce93e2d1cf023eb8fb64736f6c63430008130033a2646970667358221220a16bf01567376b59998e0554e26dadbcd5e5aa5d9b32a0df4f8dede5a6c7706264736f6c63430008130033",
+  "deployedSourceMap": "400:359:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;345:29:1;;;;;-1:-1:-1;;;;;345:29:1;;;;;;-1:-1:-1;;;;;178:32:3;;;160:51;;148:2;133:18;345:29:1;;;;;;;;646:111:2;;;:::i;:::-;;;387:14:3;;380:22;362:41;;350:2;335:18;646:111:2;222:187:3;503:137:2;;;:::i;315:24:1:-;;;;;-1:-1:-1;;;;;315:24:1;;;646:111:2;698:4;729:9;;;;;;;;;-1:-1:-1;;;;;729:9:2;-1:-1:-1;;;;;721:27:2;;:29;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;714:36;;646:111;:::o;503:137::-;546:7;565:17;585:13;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;565:33:2;503:137;-1:-1:-1;;503:137:2:o;-1:-1:-1:-;;;;;;;;:::o;414:277:3:-;481:6;534:2;522:9;513:7;509:23;505:32;502:52;;;550:1;547;540:12;502:52;582:9;576:16;635:5;628:13;621:21;614:5;611:32;601:60;;657:1;654;647:12;601:60;680:5;414:277;-1:-1:-1;;;414:277:3:o",
+  "language": "Solidity",
+  "natspec": {
+    "details": "This is the Setup Contract which checks if the challenge is solved or not (not a part of the challenge)",
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "offset": [
+    400,
+    759
+  ],
+  "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH2 0x4C JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x20C4AD96 EQ PUSH2 0x51 JUMPI DUP1 PUSH4 0x64D98F6E EQ PUSH2 0x81 JUMPI DUP1 PUSH4 0x775C300C EQ PUSH2 0x99 JUMPI DUP1 PUSH4 0xD2EF7398 EQ PUSH2 0xA1 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x1 SLOAD PUSH2 0x64 SWAP1 PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND DUP2 JUMP JUMPDEST PUSH1 0x40 MLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB SWAP1 SWAP2 AND DUP2 MSTORE PUSH1 0x20 ADD JUMPDEST PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST PUSH2 0x89 PUSH2 0xB4 JUMP JUMPDEST PUSH1 0x40 MLOAD SWAP1 ISZERO ISZERO DUP2 MSTORE PUSH1 0x20 ADD PUSH2 0x78 JUMP JUMPDEST PUSH2 0x64 PUSH2 0x131 JUMP JUMPDEST PUSH1 0x0 SLOAD PUSH2 0x64 SWAP1 PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND DUP2 JUMP JUMPDEST PUSH1 0x0 DUP1 PUSH1 0x0 SWAP1 SLOAD SWAP1 PUSH2 0x100 EXP SWAP1 DIV PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND PUSH4 0x64D98F6E PUSH1 0x40 MLOAD DUP2 PUSH4 0xFFFFFFFF AND PUSH1 0xE0 SHL DUP2 MSTORE PUSH1 0x4 ADD PUSH1 0x20 PUSH1 0x40 MLOAD DUP1 DUP4 SUB DUP2 DUP7 GAS STATICCALL ISZERO DUP1 ISZERO PUSH2 0x108 JUMPI RETURNDATASIZE PUSH1 0x0 DUP1 RETURNDATACOPY RETURNDATASIZE PUSH1 0x0 REVERT JUMPDEST POP POP POP POP PUSH1 0x40 MLOAD RETURNDATASIZE PUSH1 0x1F NOT PUSH1 0x1F DUP3 ADD AND DUP3 ADD DUP1 PUSH1 0x40 MSTORE POP DUP2 ADD SWAP1 PUSH2 0x12C SWAP2 SWAP1 PUSH2 0x16F JUMP JUMPDEST SWAP1 POP SWAP1 JUMP JUMPDEST PUSH1 0x0 DUP1 PUSH1 0x40 MLOAD PUSH2 0x140 SWAP1 PUSH2 0x163 JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 PUSH1 0x0 CREATE DUP1 ISZERO DUP1 ISZERO PUSH2 0x15C JUMPI RETURNDATASIZE PUSH1 0x0 DUP1 RETURNDATACOPY RETURNDATASIZE PUSH1 0x0 REVERT JUMPDEST POP SWAP3 SWAP2 POP POP JUMP JUMPDEST PUSH1 0xC8 DUP1 PUSH2 0x199 DUP4 CODECOPY ADD SWAP1 JUMP JUMPDEST PUSH1 0x0 PUSH1 0x20 DUP3 DUP5 SUB SLT ISZERO PUSH2 0x181 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP2 MLOAD DUP1 ISZERO ISZERO DUP2 EQ PUSH2 0x191 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST SWAP4 SWAP3 POP POP POP JUMP INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 SLOAD PUSH1 0xFF NOT AND SWAP1 SSTORE CALLVALUE DUP1 ISZERO PUSH1 0x19 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0xA0 DUP1 PUSH2 0x28 PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x32 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x3D71BEA5 EQ PUSH1 0x37 JUMPI DUP1 PUSH4 0x64D98F6E EQ PUSH1 0x4A JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x48 PUSH1 0x0 DUP1 SLOAD PUSH1 0xFF NOT AND PUSH1 0x1 OR SWAP1 SSTORE JUMP JUMPDEST STOP JUMPDEST PUSH1 0x0 SLOAD PUSH1 0x56 SWAP1 PUSH1 0xFF AND DUP2 JUMP JUMPDEST PUSH1 0x40 MLOAD SWAP1 ISZERO ISZERO DUP2 MSTORE PUSH1 0x20 ADD PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 CODECOPY 0xB4 SIGNEXTEND SIGNEXTEND SLOAD 0xC5 BLOCKHASH SUB 0xC1 0x49 0xE0 0xD9 MULMOD 0xE6 DUP3 SWAP9 0x22 CREATE 0xB0 0xB7 0x2E PUSH21 0x68CE93E2D1CF023EB8FB64736F6C63430008130033 LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 LOG1 PUSH12 0xF01567376B59998E0554E26D 0xAD 0xBC 0xD5 0xE5 0xAA 0x5D SWAP12 ORIGIN LOG0 0xDF 0x4F DUP14 0xED 0xE5 0xA6 0xC7 PUSH17 0x6264736F6C634300081300330000000000 ",
+  "pcMap": {
+    "0": {
+      "offset": [
+        400,
+        759
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x80"
+    },
+    "2": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x40"
+    },
+    "4": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "MSTORE",
+      "path": "2"
+    },
+    "5": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "CALLVALUE",
+      "path": "2"
+    },
+    "6": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "DUP1",
+      "path": "2"
+    },
+    "7": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "ISZERO",
+      "path": "2"
+    },
+    "8": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "PUSH2",
+      "path": "2",
+      "value": "0x10"
+    },
+    "11": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "JUMPI",
+      "path": "2"
+    },
+    "12": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x0"
+    },
+    "14": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "DUP1",
+      "path": "2"
+    },
+    "15": {
+      "dev": "Cannot send ether to nonpayable function",
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "REVERT",
+      "path": "2"
+    },
+    "16": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "JUMPDEST",
+      "path": "2"
+    },
+    "17": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "POP",
+      "path": "2"
+    },
+    "18": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x4"
+    },
+    "20": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "CALLDATASIZE",
+      "path": "2"
+    },
+    "21": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "LT",
+      "path": "2"
+    },
+    "22": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "PUSH2",
+      "path": "2",
+      "value": "0x4C"
+    },
+    "25": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "JUMPI",
+      "path": "2"
+    },
+    "26": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x0"
+    },
+    "28": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "CALLDATALOAD",
+      "path": "2"
+    },
+    "29": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0xE0"
+    },
+    "31": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "SHR",
+      "path": "2"
+    },
+    "32": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "DUP1",
+      "path": "2"
+    },
+    "33": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "PUSH4",
+      "path": "2",
+      "value": "0x20C4AD96"
+    },
+    "38": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "EQ",
+      "path": "2"
+    },
+    "39": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "PUSH2",
+      "path": "2",
+      "value": "0x51"
+    },
+    "42": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "JUMPI",
+      "path": "2"
+    },
+    "43": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "DUP1",
+      "path": "2"
+    },
+    "44": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "PUSH4",
+      "path": "2",
+      "value": "0x64D98F6E"
+    },
+    "49": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "EQ",
+      "path": "2"
+    },
+    "50": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "PUSH2",
+      "path": "2",
+      "value": "0x81"
+    },
+    "53": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "JUMPI",
+      "path": "2"
+    },
+    "54": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "DUP1",
+      "path": "2"
+    },
+    "55": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "PUSH4",
+      "path": "2",
+      "value": "0x775C300C"
+    },
+    "60": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "EQ",
+      "path": "2"
+    },
+    "61": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "PUSH2",
+      "path": "2",
+      "value": "0x99"
+    },
+    "64": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "JUMPI",
+      "path": "2"
+    },
+    "65": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "DUP1",
+      "path": "2"
+    },
+    "66": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "PUSH4",
+      "path": "2",
+      "value": "0xD2EF7398"
+    },
+    "71": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "EQ",
+      "path": "2"
+    },
+    "72": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "PUSH2",
+      "path": "2",
+      "value": "0xA1"
+    },
+    "75": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "JUMPI",
+      "path": "2"
+    },
+    "76": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "JUMPDEST",
+      "path": "2"
+    },
+    "77": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x0"
+    },
+    "79": {
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "DUP1",
+      "path": "2"
+    },
+    "80": {
+      "first_revert": true,
+      "fn": null,
+      "offset": [
+        400,
+        759
+      ],
+      "op": "REVERT",
+      "path": "2"
+    },
+    "81": {
+      "offset": [
+        345,
+        374
+      ],
+      "op": "JUMPDEST",
+      "path": "1"
+    },
+    "82": {
+      "fn": null,
+      "offset": [
+        345,
+        374
+      ],
+      "op": "PUSH1",
+      "path": "1",
+      "value": "0x1"
+    },
+    "84": {
+      "fn": null,
+      "offset": [
+        345,
+        374
+      ],
+      "op": "SLOAD",
+      "path": "1"
+    },
+    "85": {
+      "fn": null,
+      "offset": [
+        345,
+        374
+      ],
+      "op": "PUSH2",
+      "path": "1",
+      "value": "0x64"
+    },
+    "88": {
+      "fn": null,
+      "offset": [
+        345,
+        374
+      ],
+      "op": "SWAP1",
+      "path": "1"
+    },
+    "89": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "91": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "93": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "95": {
+      "op": "SHL"
+    },
+    "96": {
+      "op": "SUB"
+    },
+    "97": {
+      "offset": [
+        345,
+        374
+      ],
+      "op": "AND",
+      "path": "1"
+    },
+    "98": {
+      "fn": null,
+      "offset": [
+        345,
+        374
+      ],
+      "op": "DUP2",
+      "path": "1"
+    },
+    "99": {
+      "fn": null,
+      "offset": [
+        345,
+        374
+      ],
+      "op": "JUMP",
+      "path": "1"
+    },
+    "100": {
+      "fn": null,
+      "offset": [
+        345,
+        374
+      ],
+      "op": "JUMPDEST",
+      "path": "1"
+    },
+    "101": {
+      "fn": null,
+      "offset": [
+        345,
+        374
+      ],
+      "op": "PUSH1",
+      "path": "1",
+      "value": "0x40"
+    },
+    "103": {
+      "fn": null,
+      "offset": [
+        345,
+        374
+      ],
+      "op": "MLOAD",
+      "path": "1"
+    },
+    "104": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "106": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "108": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "110": {
+      "op": "SHL"
+    },
+    "111": {
+      "op": "SUB"
+    },
+    "112": {
+      "op": "SWAP1"
+    },
+    "113": {
+      "op": "SWAP2"
+    },
+    "114": {
+      "op": "AND"
+    },
+    "115": {
+      "op": "DUP2"
+    },
+    "116": {
+      "op": "MSTORE"
+    },
+    "117": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "119": {
+      "op": "ADD"
+    },
+    "120": {
+      "offset": [
+        345,
+        374
+      ],
+      "op": "JUMPDEST",
+      "path": "1"
+    },
+    "121": {
+      "fn": null,
+      "offset": [
+        345,
+        374
+      ],
+      "op": "PUSH1",
+      "path": "1",
+      "value": "0x40"
+    },
+    "123": {
+      "fn": null,
+      "offset": [
+        345,
+        374
+      ],
+      "op": "MLOAD",
+      "path": "1"
+    },
+    "124": {
+      "fn": null,
+      "offset": [
+        345,
+        374
+      ],
+      "op": "DUP1",
+      "path": "1"
+    },
+    "125": {
+      "fn": null,
+      "offset": [
+        345,
+        374
+      ],
+      "op": "SWAP2",
+      "path": "1"
+    },
+    "126": {
+      "fn": null,
+      "offset": [
+        345,
+        374
+      ],
+      "op": "SUB",
+      "path": "1"
+    },
+    "127": {
+      "fn": null,
+      "offset": [
+        345,
+        374
+      ],
+      "op": "SWAP1",
+      "path": "1"
+    },
+    "128": {
+      "fn": null,
+      "offset": [
+        345,
+        374
+      ],
+      "op": "RETURN",
+      "path": "1"
+    },
+    "129": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        646,
+        757
+      ],
+      "op": "JUMPDEST",
+      "path": "2"
+    },
+    "130": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        646,
+        757
+      ],
+      "op": "PUSH2",
+      "path": "2",
+      "value": "0x89"
+    },
+    "133": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        646,
+        757
+      ],
+      "op": "PUSH2",
+      "path": "2",
+      "value": "0xB4"
+    },
+    "136": {
+      "fn": "SetupSolveMe.isSolved",
+      "jump": "i",
+      "offset": [
+        646,
+        757
+      ],
+      "op": "JUMP",
+      "path": "2"
+    },
+    "137": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        646,
+        757
+      ],
+      "op": "JUMPDEST",
+      "path": "2"
+    },
+    "138": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        646,
+        757
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x40"
+    },
+    "140": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        646,
+        757
+      ],
+      "op": "MLOAD",
+      "path": "2"
+    },
+    "141": {
+      "op": "SWAP1"
+    },
+    "142": {
+      "op": "ISZERO"
+    },
+    "143": {
+      "op": "ISZERO"
+    },
+    "144": {
+      "op": "DUP2"
+    },
+    "145": {
+      "op": "MSTORE"
+    },
+    "146": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "148": {
+      "op": "ADD"
+    },
+    "149": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        646,
+        757
+      ],
+      "op": "PUSH2",
+      "path": "2",
+      "value": "0x78"
+    },
+    "152": {
+      "op": "JUMP"
+    },
+    "153": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        503,
+        640
+      ],
+      "op": "JUMPDEST",
+      "path": "2"
+    },
+    "154": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        503,
+        640
+      ],
+      "op": "PUSH2",
+      "path": "2",
+      "value": "0x64"
+    },
+    "157": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        503,
+        640
+      ],
+      "op": "PUSH2",
+      "path": "2",
+      "value": "0x131"
+    },
+    "160": {
+      "fn": "SetupSolveMe.deploy",
+      "jump": "i",
+      "offset": [
+        503,
+        640
+      ],
+      "op": "JUMP",
+      "path": "2"
+    },
+    "161": {
+      "offset": [
+        315,
+        339
+      ],
+      "op": "JUMPDEST",
+      "path": "1"
+    },
+    "162": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        315,
+        339
+      ],
+      "op": "PUSH1",
+      "path": "1",
+      "value": "0x0"
+    },
+    "164": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        315,
+        339
+      ],
+      "op": "SLOAD",
+      "path": "1"
+    },
+    "165": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        315,
+        339
+      ],
+      "op": "PUSH2",
+      "path": "1",
+      "value": "0x64"
+    },
+    "168": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        315,
+        339
+      ],
+      "op": "SWAP1",
+      "path": "1"
+    },
+    "169": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "171": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "173": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "175": {
+      "op": "SHL"
+    },
+    "176": {
+      "op": "SUB"
+    },
+    "177": {
+      "offset": [
+        315,
+        339
+      ],
+      "op": "AND",
+      "path": "1"
+    },
+    "178": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        315,
+        339
+      ],
+      "op": "DUP2",
+      "path": "1"
+    },
+    "179": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        315,
+        339
+      ],
+      "op": "JUMP",
+      "path": "1"
+    },
+    "180": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        646,
+        757
+      ],
+      "op": "JUMPDEST",
+      "path": "2"
+    },
+    "181": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        698,
+        702
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x0"
+    },
+    "183": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        729,
+        738
+      ],
+      "op": "DUP1",
+      "path": "2",
+      "statement": 0
+    },
+    "184": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        729,
+        738
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x0"
+    },
+    "186": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        729,
+        738
+      ],
+      "op": "SWAP1",
+      "path": "2"
+    },
+    "187": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        729,
+        738
+      ],
+      "op": "SLOAD",
+      "path": "2"
+    },
+    "188": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        729,
+        738
+      ],
+      "op": "SWAP1",
+      "path": "2"
+    },
+    "189": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        729,
+        738
+      ],
+      "op": "PUSH2",
+      "path": "2",
+      "value": "0x100"
+    },
+    "192": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        729,
+        738
+      ],
+      "op": "EXP",
+      "path": "2"
+    },
+    "193": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        729,
+        738
+      ],
+      "op": "SWAP1",
+      "path": "2"
+    },
+    "194": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        729,
+        738
+      ],
+      "op": "DIV",
+      "path": "2"
+    },
+    "195": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "197": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "199": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "201": {
+      "op": "SHL"
+    },
+    "202": {
+      "op": "SUB"
+    },
+    "203": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        729,
+        738
+      ],
+      "op": "AND",
+      "path": "2"
+    },
+    "204": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "206": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "208": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "210": {
+      "op": "SHL"
+    },
+    "211": {
+      "op": "SUB"
+    },
+    "212": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        748
+      ],
+      "op": "AND",
+      "path": "2"
+    },
+    "213": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        748
+      ],
+      "op": "PUSH4",
+      "path": "2",
+      "value": "0x64D98F6E"
+    },
+    "218": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x40"
+    },
+    "220": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "MLOAD",
+      "path": "2"
+    },
+    "221": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "DUP2",
+      "path": "2"
+    },
+    "222": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "PUSH4",
+      "path": "2",
+      "value": "0xFFFFFFFF"
+    },
+    "227": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "AND",
+      "path": "2"
+    },
+    "228": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0xE0"
+    },
+    "230": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "SHL",
+      "path": "2"
+    },
+    "231": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "DUP2",
+      "path": "2"
+    },
+    "232": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "MSTORE",
+      "path": "2"
+    },
+    "233": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x4"
+    },
+    "235": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "ADD",
+      "path": "2"
+    },
+    "236": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x20"
+    },
+    "238": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x40"
+    },
+    "240": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "MLOAD",
+      "path": "2"
+    },
+    "241": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "DUP1",
+      "path": "2"
+    },
+    "242": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "DUP4",
+      "path": "2"
+    },
+    "243": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "SUB",
+      "path": "2"
+    },
+    "244": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "DUP2",
+      "path": "2"
+    },
+    "245": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "DUP7",
+      "path": "2"
+    },
+    "246": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "GAS",
+      "path": "2"
+    },
+    "247": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "STATICCALL",
+      "path": "2"
+    },
+    "248": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "ISZERO",
+      "path": "2"
+    },
+    "249": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "DUP1",
+      "path": "2"
+    },
+    "250": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "ISZERO",
+      "path": "2"
+    },
+    "251": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "PUSH2",
+      "path": "2",
+      "value": "0x108"
+    },
+    "254": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "JUMPI",
+      "path": "2"
+    },
+    "255": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "RETURNDATASIZE",
+      "path": "2"
+    },
+    "256": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x0"
+    },
+    "258": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "DUP1",
+      "path": "2"
+    },
+    "259": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "RETURNDATACOPY",
+      "path": "2"
+    },
+    "260": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "RETURNDATASIZE",
+      "path": "2"
+    },
+    "261": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x0"
+    },
+    "263": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "REVERT",
+      "path": "2"
+    },
+    "264": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "JUMPDEST",
+      "path": "2"
+    },
+    "265": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "POP",
+      "path": "2"
+    },
+    "266": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "POP",
+      "path": "2"
+    },
+    "267": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "POP",
+      "path": "2"
+    },
+    "268": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "POP",
+      "path": "2"
+    },
+    "269": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x40"
+    },
+    "271": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "MLOAD",
+      "path": "2"
+    },
+    "272": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "RETURNDATASIZE",
+      "path": "2"
+    },
+    "273": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x1F"
+    },
+    "275": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "NOT",
+      "path": "2"
+    },
+    "276": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x1F"
+    },
+    "278": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "DUP3",
+      "path": "2"
+    },
+    "279": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "ADD",
+      "path": "2"
+    },
+    "280": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "AND",
+      "path": "2"
+    },
+    "281": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "DUP3",
+      "path": "2"
+    },
+    "282": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "ADD",
+      "path": "2"
+    },
+    "283": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "DUP1",
+      "path": "2"
+    },
+    "284": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x40"
+    },
+    "286": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "MSTORE",
+      "path": "2"
+    },
+    "287": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "POP",
+      "path": "2"
+    },
+    "288": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "DUP2",
+      "path": "2"
+    },
+    "289": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "ADD",
+      "path": "2"
+    },
+    "290": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "SWAP1",
+      "path": "2"
+    },
+    "291": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "PUSH2",
+      "path": "2",
+      "value": "0x12C"
+    },
+    "294": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "SWAP2",
+      "path": "2"
+    },
+    "295": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "SWAP1",
+      "path": "2"
+    },
+    "296": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "PUSH2",
+      "path": "2",
+      "value": "0x16F"
+    },
+    "299": {
+      "fn": "SetupSolveMe.isSolved",
+      "jump": "i",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "JUMP",
+      "path": "2"
+    },
+    "300": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        721,
+        750
+      ],
+      "op": "JUMPDEST",
+      "path": "2"
+    },
+    "301": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        714,
+        750
+      ],
+      "op": "SWAP1",
+      "path": "2"
+    },
+    "302": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        714,
+        750
+      ],
+      "op": "POP",
+      "path": "2"
+    },
+    "303": {
+      "fn": "SetupSolveMe.isSolved",
+      "offset": [
+        646,
+        757
+      ],
+      "op": "SWAP1",
+      "path": "2"
+    },
+    "304": {
+      "fn": "SetupSolveMe.isSolved",
+      "jump": "o",
+      "offset": [
+        646,
+        757
+      ],
+      "op": "JUMP",
+      "path": "2"
+    },
+    "305": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        503,
+        640
+      ],
+      "op": "JUMPDEST",
+      "path": "2"
+    },
+    "306": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        546,
+        553
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x0"
+    },
+    "308": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        565,
+        582
+      ],
+      "op": "DUP1",
+      "path": "2"
+    },
+    "309": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x40"
+    },
+    "311": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "MLOAD",
+      "path": "2"
+    },
+    "312": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "PUSH2",
+      "path": "2",
+      "value": "0x140"
+    },
+    "315": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "SWAP1",
+      "path": "2"
+    },
+    "316": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "PUSH2",
+      "path": "2",
+      "value": "0x163"
+    },
+    "319": {
+      "fn": "SetupSolveMe.deploy",
+      "jump": "i",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "JUMP",
+      "path": "2"
+    },
+    "320": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "JUMPDEST",
+      "path": "2"
+    },
+    "321": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x40"
+    },
+    "323": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "MLOAD",
+      "path": "2"
+    },
+    "324": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "DUP1",
+      "path": "2"
+    },
+    "325": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "SWAP2",
+      "path": "2"
+    },
+    "326": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "SUB",
+      "path": "2"
+    },
+    "327": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "SWAP1",
+      "path": "2"
+    },
+    "328": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x0"
+    },
+    "330": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "CREATE",
+      "path": "2"
+    },
+    "331": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "DUP1",
+      "path": "2"
+    },
+    "332": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "ISZERO",
+      "path": "2"
+    },
+    "333": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "DUP1",
+      "path": "2"
+    },
+    "334": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "ISZERO",
+      "path": "2"
+    },
+    "335": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "PUSH2",
+      "path": "2",
+      "value": "0x15C"
+    },
+    "338": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "JUMPI",
+      "path": "2"
+    },
+    "339": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "RETURNDATASIZE",
+      "path": "2"
+    },
+    "340": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x0"
+    },
+    "342": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "DUP1",
+      "path": "2"
+    },
+    "343": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "RETURNDATACOPY",
+      "path": "2"
+    },
+    "344": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "RETURNDATASIZE",
+      "path": "2"
+    },
+    "345": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x0"
+    },
+    "347": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "REVERT",
+      "path": "2"
+    },
+    "348": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        585,
+        598
+      ],
+      "op": "JUMPDEST",
+      "path": "2"
+    },
+    "349": {
+      "op": "POP"
+    },
+    "350": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        565,
+        598
+      ],
+      "op": "SWAP3",
+      "path": "2"
+    },
+    "351": {
+      "fn": "SetupSolveMe.deploy",
+      "offset": [
+        503,
+        640
+      ],
+      "op": "SWAP2",
+      "path": "2"
+    },
+    "352": {
+      "op": "POP"
+    },
+    "353": {
+      "op": "POP"
+    },
+    "354": {
+      "fn": "SetupSolveMe.deploy",
+      "jump": "o",
+      "offset": [
+        503,
+        640
+      ],
+      "op": "JUMP",
+      "path": "2"
+    },
+    "355": {
+      "op": "JUMPDEST"
+    },
+    "356": {
+      "op": "PUSH1",
+      "value": "0xC8"
+    },
+    "358": {
+      "op": "DUP1"
+    },
+    "359": {
+      "op": "PUSH2",
+      "value": "0x199"
+    },
+    "362": {
+      "op": "DUP4"
+    },
+    "363": {
+      "op": "CODECOPY"
+    },
+    "364": {
+      "op": "ADD"
+    },
+    "365": {
+      "op": "SWAP1"
+    },
+    "366": {
+      "jump": "o",
+      "op": "JUMP"
+    },
+    "367": {
+      "op": "JUMPDEST"
+    },
+    "368": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "370": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "372": {
+      "op": "DUP3"
+    },
+    "373": {
+      "op": "DUP5"
+    },
+    "374": {
+      "op": "SUB"
+    },
+    "375": {
+      "op": "SLT"
+    },
+    "376": {
+      "op": "ISZERO"
+    },
+    "377": {
+      "op": "PUSH2",
+      "value": "0x181"
+    },
+    "380": {
+      "op": "JUMPI"
+    },
+    "381": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "383": {
+      "op": "DUP1"
+    },
+    "384": {
+      "op": "REVERT"
+    },
+    "385": {
+      "op": "JUMPDEST"
+    },
+    "386": {
+      "op": "DUP2"
+    },
+    "387": {
+      "op": "MLOAD"
+    },
+    "388": {
+      "op": "DUP1"
+    },
+    "389": {
+      "op": "ISZERO"
+    },
+    "390": {
+      "op": "ISZERO"
+    },
+    "391": {
+      "op": "DUP2"
+    },
+    "392": {
+      "op": "EQ"
+    },
+    "393": {
+      "op": "PUSH2",
+      "value": "0x191"
+    },
+    "396": {
+      "op": "JUMPI"
+    },
+    "397": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "399": {
+      "op": "DUP1"
+    },
+    "400": {
+      "op": "REVERT"
+    },
+    "401": {
+      "op": "JUMPDEST"
+    },
+    "402": {
+      "op": "SWAP4"
+    },
+    "403": {
+      "op": "SWAP3"
+    },
+    "404": {
+      "op": "POP"
+    },
+    "405": {
+      "op": "POP"
+    },
+    "406": {
+      "op": "POP"
+    },
+    "407": {
+      "jump": "o",
+      "op": "JUMP"
+    }
+  },
+  "sha1": "847879426a3aeb2651c3d7b81d98c6b970d901a5",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.8.0;\n\nimport {Setup} from \"./Setup.sol\";\n/**\n * @title SolveMe\n * @author BlueAlder duc.tf\n */\n\ncontract SolveMe {\n    bool public isSolved = false;\n\n    function solveChallenge() external {\n        isSolved = true;\n    }\n}\n\n/**\n * @dev This is the Setup Contract which checks if the challenge is solved or not\n * (not a part of the challenge)\n */\ncontract SetupSolveMe is Setup {\n    constructor(address player_address) Setup(player_address) {}\n\n    function deploy() public override returns (address) {\n        SolveMe _instance = new SolveMe();\n        return address(_instance);\n    }\n\n    function isSolved() external view override returns (bool) {\n        return SolveMe(challenge).isSolved();\n    }\n}\n",
+  "sourceMap": "400:359:2:-:0;;;437:60;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;428:14:1;:32;;-1:-1:-1;;;;;;428:32:1;-1:-1:-1;;;;;428:32:1;;;;;;482:8;:6;:8::i;:::-;470:9;:20;;-1:-1:-1;;;;;;470:20:1;-1:-1:-1;;;;;470:20:1;;;;;;;;;;-1:-1:-1;400:359:2;;-1:-1:-1;400:359:2;503:137;546:7;565:17;585:13;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;565:33:2;503:137;-1:-1:-1;;503:137:2:o;400:359::-;;;;;;;;:::o;14:290:3:-;84:6;137:2;125:9;116:7;112:23;108:32;105:52;;;153:1;150;143:12;105:52;179:16;;-1:-1:-1;;;;;224:31:3;;214:42;;204:70;;270:1;267;260:12;204:70;293:5;14:290;-1:-1:-1;;;14:290:3:o;:::-;400:359:2;;;;;;",
+  "sourcePath": "contracts/SolveMe.sol",
+  "type": "contract"
+}

@@ -1,0 +1,42 @@
+{
+  "name": "ductf-blockchain-api",
+  "version": "2.0.0",
+  "description": "Base Challenge infra to run Blockchain Challenges",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "dev": "npm run build-ui && npm run compile && npm run start",
+    "start": "NODE_ENV=development tsc-watch --onSuccess \"node dist/\"",
+    "build": "tsc",
+    "build-ui": "cd ui && npm run build && mkdir -p ../static && cp -r dist/* ../static/",
+    "compile": "cd example/contracts && brownie compile",
+    "prod": "NODE_ENV=production node dist/"
+  },
+  "author": "DownunderCTF Infra Team",
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/cors": "^8.2.1",
+    "@fastify/rate-limit": "^7.4.0",
+    "@fastify/static": "^6.5.0",
+    "dotenv": "^16.0.0",
+    "ethers": "^5.6.5",
+    "exponential-backoff": "^3.1.0",
+    "fastify": "^4.5.3",
+    "fastify-plugin": "^4.5.0",
+    "js-yaml": "^4.1.0",
+    "node-fetch": "^2.6.7",
+    "solc": "^0.8.13",
+    "tsc-watch": "^5.0.3",
+    "typescript": "^4.6.4",
+    "yaml": "^2.2.1",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.5",
+    "@types/node": "^17.0.30",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "eslint": "^8.20.0",
+    "jest": "^29.5.0"
+  }
+}

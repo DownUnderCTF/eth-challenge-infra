@@ -1,37 +1,29 @@
 version: "3.3"
 services:
-  geth:
-    build: geth/
-    container_name: ethereum
-    volumes:
-      - ./geth/config:/config
-    environment:
-      - BLOCK_TIME=5
-    ports:
-      - 8545:8545
-    restart: "always"
-    secrets:
-      - sealer_password
-  
   api:
-    build: api/
+    build: .
+    image: ghcr.io/downunderctf/eth-challenge-base/eth-challenge:latest
     container_name: blockchain_challenge_manager
+    environment:
+      - BLOCKCHAIN_RPC_URL=http://geth:8545
+      - DEPLOYER_PRIVATE_KEY=35d7e3183bbe3e89907724a7c50a1e3f7207af30d169812534558f3591e27b31
+      # - CONFIG_FILE_NAME=challenge.yaml
     ports:
       - 3000:3000
+    restart: "no"
+  geth:
+    build: geth/
+    image: ghcr.io/downunderctf/eth-challenge-base/geth:latest
+    container_name: geth
     environment:
-      - BLOCKCHAIN_URL=http://geth:8545
-      - CHALLENGE=PrivateLog
-    restart: "always"
-    secrets:
-      - deployer_priv_key
-    depends_on:
-      - geth
+      - DEPLOYER_PRIVATE_KEY=35d7e3183bbe3e89907724a7c50a1e3f7207af30d169812534558f3591e27b31
+      # - BLOCK_TIME=0
+      # - CHAIN_ID=31337
+    ports:
+      - 8545:8545
+    restart: "no"
 
-secrets:
-  sealer_password:
-    file: ./geth/sealerpassword.secret.txt
-  deployer_priv_key:
-    file: ./api/deployer_priv_key.secret.txt
+
 
 networks:
   default:

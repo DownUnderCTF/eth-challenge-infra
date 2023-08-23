@@ -1,0 +1,12 @@
+challenge_name: "Solve Me"
+challenge_description: "you gonna be solving this challenge alright"
+setup_contract_name: "SetupSolveMe"
+flag: "DUCTF{Example_flag}"
+block_time: 0
+
+# Optional flags
+player_initial_balance: 2
+# enable_faucet: false
+# challenge_solve_type: "function"
+challenge_source_files:
+  - "SolveMe.sol"

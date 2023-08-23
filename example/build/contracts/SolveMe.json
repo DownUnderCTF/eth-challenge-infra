@@ -1,0 +1,1477 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "isSolved",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "solveChallenge",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "2": "contracts/SolveMe.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/SolveMe.sol",
+    "exportedSymbols": {
+      "Setup": [
+        104
+      ],
+      "SetupSolveMe": [
+        167
+      ],
+      "SolveMe": [
+        121
+      ]
+    },
+    "id": 168,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 106,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:2"
+      },
+      {
+        "absolutePath": "contracts/Setup.sol",
+        "file": "./Setup.sol",
+        "id": 108,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 168,
+        "sourceUnit": 105,
+        "src": "58:34:2",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 107,
+              "name": "Setup",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 104,
+              "src": "66:5:2",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "SolveMe",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 109,
+          "nodeType": "StructuredDocumentation",
+          "src": "93:53:2",
+          "text": " @title SolveMe\n @author BlueAlder duc.tf"
+        },
+        "fullyImplemented": true,
+        "id": 121,
+        "linearizedBaseContracts": [
+          121
+        ],
+        "name": "SolveMe",
+        "nameLocation": "157:7:2",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "64d98f6e",
+            "id": 112,
+            "mutability": "mutable",
+            "name": "isSolved",
+            "nameLocation": "183:8:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 121,
+            "src": "171:28:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 110,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "171:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "value": {
+              "hexValue": "66616c7365",
+              "id": 111,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "bool",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "194:5:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              },
+              "value": "false"
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 119,
+              "nodeType": "Block",
+              "src": "241:32:2",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 117,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 115,
+                      "name": "isSolved",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 112,
+                      "src": "251:8:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "74727565",
+                      "id": 116,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "262:4:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "251:15:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 118,
+                  "nodeType": "ExpressionStatement",
+                  "src": "251:15:2"
+                }
+              ]
+            },
+            "functionSelector": "3d71bea5",
+            "id": 120,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "solveChallenge",
+            "nameLocation": "215:14:2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 113,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "229:2:2"
+            },
+            "returnParameters": {
+              "id": 114,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "241:0:2"
+            },
+            "scope": 121,
+            "src": "206:67:2",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 168,
+        "src": "148:127:2",
+        "usedErrors": []
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 123,
+              "name": "Setup",
+              "nameLocations": [
+                "425:5:2"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 104,
+              "src": "425:5:2"
+            },
+            "id": 124,
+            "nodeType": "InheritanceSpecifier",
+            "src": "425:5:2"
+          }
+        ],
+        "canonicalName": "SetupSolveMe",
+        "contractDependencies": [
+          121
+        ],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 122,
+          "nodeType": "StructuredDocumentation",
+          "src": "277:122:2",
+          "text": " @dev This is the Setup Contract which checks if the challenge is solved or not\n (not a part of the challenge)"
+        },
+        "fullyImplemented": true,
+        "id": 167,
+        "linearizedBaseContracts": [
+          167,
+          104
+        ],
+        "name": "SetupSolveMe",
+        "nameLocation": "409:12:2",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 132,
+              "nodeType": "Block",
+              "src": "495:2:2",
+              "statements": []
+            },
+            "id": 133,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "id": 129,
+                    "name": "player_address",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 126,
+                    "src": "479:14:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "id": 130,
+                "kind": "baseConstructorSpecifier",
+                "modifierName": {
+                  "id": 128,
+                  "name": "Setup",
+                  "nameLocations": [
+                    "473:5:2"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 104,
+                  "src": "473:5:2"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "473:21:2"
+              }
+            ],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 127,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 126,
+                  "mutability": "mutable",
+                  "name": "player_address",
+                  "nameLocation": "457:14:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 133,
+                  "src": "449:22:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 125,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "449:7:2",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "448:24:2"
+            },
+            "returnParameters": {
+              "id": 131,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "495:0:2"
+            },
+            "scope": 167,
+            "src": "437:60:2",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "baseFunctions": [
+              98
+            ],
+            "body": {
+              "id": 152,
+              "nodeType": "Block",
+              "src": "555:85:2",
+              "statements": [
+                {
+                  "assignments": [
+                    141
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 141,
+                      "mutability": "mutable",
+                      "name": "_instance",
+                      "nameLocation": "573:9:2",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 152,
+                      "src": "565:17:2",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_SolveMe_$121",
+                        "typeString": "contract SolveMe"
+                      },
+                      "typeName": {
+                        "id": 140,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 139,
+                          "name": "SolveMe",
+                          "nameLocations": [
+                            "565:7:2"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 121,
+                          "src": "565:7:2"
+                        },
+                        "referencedDeclaration": 121,
+                        "src": "565:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_SolveMe_$121",
+                          "typeString": "contract SolveMe"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 146,
+                  "initialValue": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 144,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "NewExpression",
+                      "src": "585:11:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_SolveMe_$121_$",
+                        "typeString": "function () returns (contract SolveMe)"
+                      },
+                      "typeName": {
+                        "id": 143,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 142,
+                          "name": "SolveMe",
+                          "nameLocations": [
+                            "589:7:2"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 121,
+                          "src": "589:7:2"
+                        },
+                        "referencedDeclaration": 121,
+                        "src": "589:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_SolveMe_$121",
+                          "typeString": "contract SolveMe"
+                        }
+                      }
+                    },
+                    "id": 145,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "585:13:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_SolveMe_$121",
+                      "typeString": "contract SolveMe"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "565:33:2"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 149,
+                        "name": "_instance",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 141,
+                        "src": "623:9:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_SolveMe_$121",
+                          "typeString": "contract SolveMe"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_contract$_SolveMe_$121",
+                          "typeString": "contract SolveMe"
+                        }
+                      ],
+                      "id": 148,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "ElementaryTypeNameExpression",
+                      "src": "615:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_address_$",
+                        "typeString": "type(address)"
+                      },
+                      "typeName": {
+                        "id": 147,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "615:7:2",
+                        "typeDescriptions": {}
+                      }
+                    },
+                    "id": 150,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "615:18:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 138,
+                  "id": 151,
+                  "nodeType": "Return",
+                  "src": "608:25:2"
+                }
+              ]
+            },
+            "functionSelector": "775c300c",
+            "id": 153,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deploy",
+            "nameLocation": "512:6:2",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 135,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "528:8:2"
+            },
+            "parameters": {
+              "id": 134,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "518:2:2"
+            },
+            "returnParameters": {
+              "id": 138,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 137,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 153,
+                  "src": "546:7:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 136,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "546:7:2",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "545:9:2"
+            },
+            "scope": 167,
+            "src": "503:137:2",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "baseFunctions": [
+              103
+            ],
+            "body": {
+              "id": 165,
+              "nodeType": "Block",
+              "src": "704:53:2",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "arguments": [
+                          {
+                            "id": 160,
+                            "name": "challenge",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 76,
+                            "src": "729:9:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "id": 159,
+                          "name": "SolveMe",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 121,
+                          "src": "721:7:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_SolveMe_$121_$",
+                            "typeString": "type(contract SolveMe)"
+                          }
+                        },
+                        "id": 161,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "nameLocations": [],
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "721:18:2",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_SolveMe_$121",
+                          "typeString": "contract SolveMe"
+                        }
+                      },
+                      "id": 162,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "740:8:2",
+                      "memberName": "isSolved",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 112,
+                      "src": "721:27:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_view$__$returns$_t_bool_$",
+                        "typeString": "function () view external returns (bool)"
+                      }
+                    },
+                    "id": 163,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "721:29:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 158,
+                  "id": 164,
+                  "nodeType": "Return",
+                  "src": "714:36:2"
+                }
+              ]
+            },
+            "functionSelector": "64d98f6e",
+            "id": 166,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isSolved",
+            "nameLocation": "655:8:2",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 155,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "680:8:2"
+            },
+            "parameters": {
+              "id": 154,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "663:2:2"
+            },
+            "returnParameters": {
+              "id": 158,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 157,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 166,
+                  "src": "698:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 156,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "698:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "697:6:2"
+            },
+            "scope": 167,
+            "src": "646:111:2",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 168,
+        "src": "400:359:2",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:727:2"
+  },
+  "bytecode": "60806040526000805460ff19169055348015601957600080fd5b5060a0806100286000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80633d71bea514603757806364d98f6e14604a575b600080fd5b60486000805460ff19166001179055565b005b60005460569060ff1681565b604051901515815260200160405180910390f3fea264697066735822122039b40b0b54c54003c149e0d909e6829822f0b0b72e7468ce93e2d1cf023eb8fb64736f6c63430008130033",
+  "bytecodeSha1": "8062dbc09c4056a7e1783a0e4ef9997ee38c81a1",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.8.19+commit.7dd6d404"
+  },
+  "contractName": "SolveMe",
+  "coverageMap": {
+    "branches": {
+      "2": {}
+    },
+    "statements": {
+      "2": {
+        "SolveMe.solveChallenge": {
+          "0": [
+            251,
+            266
+          ]
+        }
+      }
+    }
+  },
+  "dependencies": [],
+  "deployedBytecode": "6080604052348015600f57600080fd5b506004361060325760003560e01c80633d71bea514603757806364d98f6e14604a575b600080fd5b60486000805460ff19166001179055565b005b60005460569060ff1681565b604051901515815260200160405180910390f3fea264697066735822122039b40b0b54c54003c149e0d909e6829822f0b0b72e7468ce93e2d1cf023eb8fb64736f6c63430008130033",
+  "deployedSourceMap": "148:127:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;206:67;;251:8;:15;;-1:-1:-1;;251:15:2;262:4;251:15;;;206:67;;;171:28;;;;;;;;;;;;179:14:3;;172:22;154:41;;142:2;127:18;171:28:2;;;;;;",
+  "language": "Solidity",
+  "natspec": {
+    "author": "BlueAlder duc.tf",
+    "kind": "dev",
+    "methods": {},
+    "title": "SolveMe",
+    "version": 1
+  },
+  "offset": [
+    148,
+    275
+  ],
+  "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x32 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x3D71BEA5 EQ PUSH1 0x37 JUMPI DUP1 PUSH4 0x64D98F6E EQ PUSH1 0x4A JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x48 PUSH1 0x0 DUP1 SLOAD PUSH1 0xFF NOT AND PUSH1 0x1 OR SWAP1 SSTORE JUMP JUMPDEST STOP JUMPDEST PUSH1 0x0 SLOAD PUSH1 0x56 SWAP1 PUSH1 0xFF AND DUP2 JUMP JUMPDEST PUSH1 0x40 MLOAD SWAP1 ISZERO ISZERO DUP2 MSTORE PUSH1 0x20 ADD PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 CODECOPY 0xB4 SIGNEXTEND SIGNEXTEND SLOAD 0xC5 BLOCKHASH SUB 0xC1 0x49 0xE0 0xD9 MULMOD 0xE6 DUP3 SWAP9 0x22 CREATE 0xB0 0xB7 0x2E PUSH21 0x68CE93E2D1CF023EB8FB64736F6C63430008130033 ",
+  "pcMap": {
+    "0": {
+      "offset": [
+        148,
+        275
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x80"
+    },
+    "2": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x40"
+    },
+    "4": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "MSTORE",
+      "path": "2"
+    },
+    "5": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "CALLVALUE",
+      "path": "2"
+    },
+    "6": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "DUP1",
+      "path": "2"
+    },
+    "7": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "ISZERO",
+      "path": "2"
+    },
+    "8": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0xF"
+    },
+    "10": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "JUMPI",
+      "path": "2"
+    },
+    "11": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x0"
+    },
+    "13": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "DUP1",
+      "path": "2"
+    },
+    "14": {
+      "dev": "Cannot send ether to nonpayable function",
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "REVERT",
+      "path": "2"
+    },
+    "15": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "JUMPDEST",
+      "path": "2"
+    },
+    "16": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "POP",
+      "path": "2"
+    },
+    "17": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x4"
+    },
+    "19": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "CALLDATASIZE",
+      "path": "2"
+    },
+    "20": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "LT",
+      "path": "2"
+    },
+    "21": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x32"
+    },
+    "23": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "JUMPI",
+      "path": "2"
+    },
+    "24": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x0"
+    },
+    "26": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "CALLDATALOAD",
+      "path": "2"
+    },
+    "27": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0xE0"
+    },
+    "29": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "SHR",
+      "path": "2"
+    },
+    "30": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "DUP1",
+      "path": "2"
+    },
+    "31": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "PUSH4",
+      "path": "2",
+      "value": "0x3D71BEA5"
+    },
+    "36": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "EQ",
+      "path": "2"
+    },
+    "37": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x37"
+    },
+    "39": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "JUMPI",
+      "path": "2"
+    },
+    "40": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "DUP1",
+      "path": "2"
+    },
+    "41": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "PUSH4",
+      "path": "2",
+      "value": "0x64D98F6E"
+    },
+    "46": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "EQ",
+      "path": "2"
+    },
+    "47": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x4A"
+    },
+    "49": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "JUMPI",
+      "path": "2"
+    },
+    "50": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "JUMPDEST",
+      "path": "2"
+    },
+    "51": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x0"
+    },
+    "53": {
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "DUP1",
+      "path": "2"
+    },
+    "54": {
+      "first_revert": true,
+      "fn": null,
+      "offset": [
+        148,
+        275
+      ],
+      "op": "REVERT",
+      "path": "2"
+    },
+    "55": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        206,
+        273
+      ],
+      "op": "JUMPDEST",
+      "path": "2"
+    },
+    "56": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        206,
+        273
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x48"
+    },
+    "58": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        251,
+        259
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "statement": 0,
+      "value": "0x0"
+    },
+    "60": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        251,
+        266
+      ],
+      "op": "DUP1",
+      "path": "2"
+    },
+    "61": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        251,
+        266
+      ],
+      "op": "SLOAD",
+      "path": "2"
+    },
+    "62": {
+      "op": "PUSH1",
+      "value": "0xFF"
+    },
+    "64": {
+      "op": "NOT"
+    },
+    "65": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        251,
+        266
+      ],
+      "op": "AND",
+      "path": "2"
+    },
+    "66": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        262,
+        266
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x1"
+    },
+    "68": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        251,
+        266
+      ],
+      "op": "OR",
+      "path": "2"
+    },
+    "69": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        251,
+        266
+      ],
+      "op": "SWAP1",
+      "path": "2"
+    },
+    "70": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        251,
+        266
+      ],
+      "op": "SSTORE",
+      "path": "2"
+    },
+    "71": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        206,
+        273
+      ],
+      "op": "JUMP",
+      "path": "2"
+    },
+    "72": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        206,
+        273
+      ],
+      "op": "JUMPDEST",
+      "path": "2"
+    },
+    "73": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        206,
+        273
+      ],
+      "op": "STOP",
+      "path": "2"
+    },
+    "74": {
+      "offset": [
+        171,
+        199
+      ],
+      "op": "JUMPDEST",
+      "path": "2"
+    },
+    "75": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        171,
+        199
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x0"
+    },
+    "77": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        171,
+        199
+      ],
+      "op": "SLOAD",
+      "path": "2"
+    },
+    "78": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        171,
+        199
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x56"
+    },
+    "80": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        171,
+        199
+      ],
+      "op": "SWAP1",
+      "path": "2"
+    },
+    "81": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        171,
+        199
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0xFF"
+    },
+    "83": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        171,
+        199
+      ],
+      "op": "AND",
+      "path": "2"
+    },
+    "84": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        171,
+        199
+      ],
+      "op": "DUP2",
+      "path": "2"
+    },
+    "85": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        171,
+        199
+      ],
+      "op": "JUMP",
+      "path": "2"
+    },
+    "86": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        171,
+        199
+      ],
+      "op": "JUMPDEST",
+      "path": "2"
+    },
+    "87": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        171,
+        199
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x40"
+    },
+    "89": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        171,
+        199
+      ],
+      "op": "MLOAD",
+      "path": "2"
+    },
+    "90": {
+      "op": "SWAP1"
+    },
+    "91": {
+      "op": "ISZERO"
+    },
+    "92": {
+      "op": "ISZERO"
+    },
+    "93": {
+      "op": "DUP2"
+    },
+    "94": {
+      "op": "MSTORE"
+    },
+    "95": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "97": {
+      "op": "ADD"
+    },
+    "98": {
+      "offset": [
+        171,
+        199
+      ],
+      "op": "PUSH1",
+      "path": "2",
+      "value": "0x40"
+    },
+    "100": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        171,
+        199
+      ],
+      "op": "MLOAD",
+      "path": "2"
+    },
+    "101": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        171,
+        199
+      ],
+      "op": "DUP1",
+      "path": "2"
+    },
+    "102": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        171,
+        199
+      ],
+      "op": "SWAP2",
+      "path": "2"
+    },
+    "103": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        171,
+        199
+      ],
+      "op": "SUB",
+      "path": "2"
+    },
+    "104": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        171,
+        199
+      ],
+      "op": "SWAP1",
+      "path": "2"
+    },
+    "105": {
+      "fn": "SolveMe.solveChallenge",
+      "offset": [
+        171,
+        199
+      ],
+      "op": "RETURN",
+      "path": "2"
+    }
+  },
+  "sha1": "847879426a3aeb2651c3d7b81d98c6b970d901a5",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.8.0;\n\nimport {Setup} from \"./Setup.sol\";\n/**\n * @title SolveMe\n * @author BlueAlder duc.tf\n */\n\ncontract SolveMe {\n    bool public isSolved = false;\n\n    function solveChallenge() external {\n        isSolved = true;\n    }\n}\n\n/**\n * @dev This is the Setup Contract which checks if the challenge is solved or not\n * (not a part of the challenge)\n */\ncontract SetupSolveMe is Setup {\n    constructor(address player_address) Setup(player_address) {}\n\n    function deploy() public override returns (address) {\n        SolveMe _instance = new SolveMe();\n        return address(_instance);\n    }\n\n    function isSolved() external view override returns (bool) {\n        return SolveMe(challenge).isSolved();\n    }\n}\n",
+  "sourceMap": "148:127:2:-:0;;;194:5;171:28;;-1:-1:-1;;171:28:2;;;148:127;;;;;;;;;;;;;;;;",
+  "sourcePath": "contracts/SolveMe.sol",
+  "type": "contract"
+}
