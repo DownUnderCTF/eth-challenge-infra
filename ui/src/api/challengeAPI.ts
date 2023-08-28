@@ -36,6 +36,7 @@ export type ChallengeDetailsData = {
   name: string;
   description: string;
   status: "DEPLOYED" | "DEPLOYING" | "NOT DEPLOYED" | "FAILED";
+  rpc_url: string;
   player_wallet?: {
     address: string;
     private_key: string;

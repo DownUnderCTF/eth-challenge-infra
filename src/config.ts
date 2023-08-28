@@ -11,6 +11,9 @@ export const HOST =
 export const BLOCKCHAIN_RPC_URL =
   process.env.BLOCKCHAIN_RPC_URL || "http://localhost:8545";
 
+export const EXTERNAL_RPC_URL =
+  process.env.EXTERNAL_RPC_URL || BLOCKCHAIN_RPC_URL;
+
 export const CONFIG_FILE_NAME =
   process.env.CONFIG_FILE_NAME || "challenge.yaml";
 

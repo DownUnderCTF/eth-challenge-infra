@@ -3,6 +3,7 @@ import cors from "@fastify/cors";
 import ChallengeManager from "../plugins/challengemanager.plugin";
 import * as strings from "../strings";
 import { base64 } from "ethers/lib/utils";
+import { EXTERNAL_RPC_URL } from "../config";
 
 export default async function register(fastify: FastifyInstance) {
   fastify.register(ChallengeManager);
@@ -46,6 +47,7 @@ export default async function register(fastify: FastifyInstance) {
       description: challenge.description,
       status: challenge.status,
       blockTime: challenge.blockTime,
+      rpc_url: EXTERNAL_RPC_URL,
     };
 
     if (challenge.isDeployed) {
@@ -143,6 +145,7 @@ type ChallengeDetailsReply = {
   description: string;
   status: string;
   blockTime: number;
+  rpc_url: string;
   player_wallet?: {
     address: string;
     private_key: string;

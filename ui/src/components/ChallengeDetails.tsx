@@ -46,6 +46,7 @@ export default function ChallengeDetails() {
     }
   }
 
+
   return (
     <div className="flex flex-col justify-center w-144">
       <div className="border rounded shadow p-5">
@@ -80,15 +81,13 @@ export default function ChallengeDetails() {
               <ChallengeDetail detail='Block Time' tooltipText="The time in seconds between blocks. 0 means instant.">
                 <CopyableBox valueType='Block Time' value={data.blockTime.toString()} />
               </ChallengeDetail>
+              <ChallengeDetail detail='RPC URL' tooltipText="The URL that you can connect to the Blockchain RPC API">
+                <CopyableBox valueType='rpc url' value={data.rpc_url} />
+              </ChallengeDetail>
             </div>
 
           </>
           : "Unable to load your challenge details :( If this error persists please contact an admin. "}
-
-        {/* TODO update these to be dynamic variables based on what we want */}
-        <ChallengeDetail detail='RPC URL' tooltipText="The URL that you can connect to the Blockchain RPC API">
-          <CopyableBox valueType='rpc url' value='http://localhost:8545' />
-        </ChallengeDetail>
 
         <ChallengeDetail detail='Chain ID' tooltipText="The unique ID of the blockchain.">
           <CopyableBox valueType='Chain ID' value='31337' />
