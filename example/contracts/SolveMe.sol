@@ -21,7 +21,7 @@ contract SolveMe {
  * (not a part of the challenge)
  */
 contract SetupSolveMe is Setup {
-    constructor(address player_address) Setup(player_address) {}
+    constructor(address player_address) payable Setup(player_address) {}
 
     function deploy() public override returns (address) {
         SolveMe _instance = new SolveMe();

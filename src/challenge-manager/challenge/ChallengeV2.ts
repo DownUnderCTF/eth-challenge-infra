@@ -161,12 +161,22 @@ export class ChallengeV2 {
 
   // Function that will be called upon creation of the challenge
   private async deployChallenge(): Promise<void> {
-    console.log("Deploying setup contract");
+    const contractInitialValue = ethers.utils.parseEther(
+      this._config.contractInitialBalance
+    );
+    console.log(
+      `Deploying setup contract with ${this._config.contractInitialBalance} ETH`
+    );
 
     try {
       this._setupContract = await this.deployer.deployContract(
         this._config.setupContractName,
-        [this.playerWallet.address]
+        [
+          this.playerWallet.address,
+          {
+            value: contractInitialValue,
+          },
+        ]
       );
     } catch (e: unknown) {
       throw new Error("Unable to deploy challenge contract", { cause: e });

@@ -11,6 +11,7 @@ export const challengeConfigSchema = z.object({
   // optional flags
   challenge_source_files: z.optional(z.array(z.string())),
   player_initial_balance: z.optional(z.number().positive()),
+  contract_initial_balance: z.optional(z.number().positive()),
   enable_faucet: z.optional(z.boolean()),
   challenge_solve_type: z.optional(z.enum(["function", "event"])),
 });
@@ -24,6 +25,7 @@ export class ChallengeConfig {
   readonly setupContractName: string;
   readonly flag: string;
   readonly playerInitialBalance: string;
+  readonly contractInitialBalance: string;
   readonly faucetEnabled: boolean;
   readonly challengeSolveType: string;
   readonly blockTime: number;
@@ -40,6 +42,8 @@ export class ChallengeConfig {
     this.challengeSourceFiles = config.challenge_source_files || [];
     this.playerInitialBalance =
       config.player_initial_balance?.toString() || "1";
+    this.contractInitialBalance =
+      config.contract_initial_balance?.toString() || "0";
     this.faucetEnabled = config.enable_faucet || false;
     this.challengeSolveType = config.challenge_solve_type || "function";
   }

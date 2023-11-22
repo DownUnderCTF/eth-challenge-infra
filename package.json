@@ -1,6 +1,6 @@
 {
   "name": "ductf-blockchain-api",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Base Challenge infra to run Blockchain Challenges",
   "main": "index.js",
   "types": "index.d.ts",
